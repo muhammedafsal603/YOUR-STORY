@@ -1,0 +1,23 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+h1{
+    font-family: "Space Grotesk", sans-serif;
+}
+body{
+    
+  font-family: "Abel", sans-serif;
+}
+/* .about{
+  
+    width: 100%;
+    height: 800px;
+    
+    background-image: url(./pics/beautiful-decorated-wedding-arch-near-sea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+} */
