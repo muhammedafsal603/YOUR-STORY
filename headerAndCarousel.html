@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="icon" type="image" href="./file.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class=" navbar bg-white-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="h-16 w-22" src="./file.png" alt="Your Company">
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <div class="buttons">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="rounded-md px-3 py-5 text-xs font-medium text-orange-300">HOME</a>
+              <!-- Dropdown -->
+               
+<button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-orange  font-medium rounded-lg text-xs px-5 py-5 text-center inline-flex items-center dark:text-orange-300 dark:hover:text-orange-500 " type="button">ABOUT US<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
+  </button>
+  
+  <!-- Dropdown menu -->
+  <div id="dropdownDelay" class="z-10 hidden bg-black divide-y divide-black-100 rounded-lg shadow w-44">
+      <ul class="py-2 text-sm text-black-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-black-100 dark:hover:bg-gray-600 dark:hover:text-white">Stories by events</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Photo gallery</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Testimonials</a>
+        </li>
+      </ul>
+  </div>
+  <!-- Droupdown2 -->
+  <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay1" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-orange focus:outline-none  font-medium rounded-lg text-xs px-5 py-5 text-center inline-flex items-center dark:text-orange-300 dark:hover:text-orange-500 " type="button">SERVICES<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+    </button>
+    
+    <!-- Dropdown menu -->
+    <div id="dropdownDelay1" class="z-10 hidden bg-black divide-y divide-black-100 rounded-lg shadow w-44">
+        <ul class="py-2 text-sm text-black-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-black-100 dark:hover:bg-gray-600 dark:hover:text-white">Corporate event management</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Wedding planner</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Beach wedding</a>
+          </li>
+        </ul>
+    </div>
+    
+              <a href="#" class="rounded-md px-3 py-5 text-xs font-medium text-black-300  hover:text-black-500">WEDDING VENUES</a>
+              <a href="#" class="rounded-md px-3 py-5 text-xs font-medium text-black-300  hover:text-black-500">LET'S TALK</a>
+            </div>
+          </div>
+        </div>
+       
+        </div>
+      </div>
+    </div>   
+  </nav>
+</div>
+<!-- --------   -->
+      <!-- carousel -->
+      <div id="default-carousel" class="carousel relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden md:h-[650px]">
+             <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://www.wedding-spot.com/blog/sites/wsblog/files/images/migrated/111-chairs%2Band%2Baltar%2Bon%2Bbeach%2Bfor%2Bbeach%2Bwedding.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://i.pinimg.com/originals/79/21/54/7921549966afe705fb5520794e8fedc4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://yannidesignstudio.com/app/uploads/2019/11/hindu-outdoor-marriage-ceremony-indian-wedding-aisle-decor-destination-event-venue-marigold-aisle-decorations-fresh-floral-mandap-celebrity-wedding-columbus-ceremony-ohio-indian-wedding-decor-the-estate-at-new-albany-ohio-wedding-venue-1440x960.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://jannatevents.com/wp-content/uploads/2022/08/wedding-event-management.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://youthincmag.com/wp-content/uploads/2018/12/event-management.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- carousel content -->
+         <div class="caro_content">
+            <p style="color: orange; font-size: large;">TAKE A TRIP INTO PARADISE</p>
+            <h1 class="font" style="font-size: 50px; font-weight:800;"> Partner with Melodia <br> Event Management in <br> Kerala </h1>
+            <p style="font-weight: 600;">ISO 9001:2015 certified company</p>
+            <button class="caro_but">Let's Talk</button>
+         </div>
+         <!-- footer -->
+</body>
+</html>
