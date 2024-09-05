@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo_Gallery</title>
+    <link rel="icon" type="image" href="./file.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- navbar -->
+  <nav class=" navbar bg-white-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="h-16 w-22" src="./file.png" alt="Your Company">
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <div class="buttons">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="rounded-md px-3 py-5 text-xs font-medium text-orange-300">HOME</a>
+              <!-- Dropdown -->
+               
+<button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-orange  font-medium rounded-lg text-xs px-5 py-5 text-center inline-flex items-center dark:text-orange-300 dark:hover:text-orange-500 " type="button">ABOUT US<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
+  </button>
+  
+  <!-- Dropdown menu -->
+  <div id="dropdownDelay" class="z-10 hidden bg-black divide-y divide-black-100 rounded-lg shadow w-44">
+      <ul class="py-2 text-sm text-black-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+        <li>
+          <a href="about.html" class="block px-4 py-2 hover:bg-black-100 dark:hover:bg-gray-600 dark:hover:text-white">Stories by events</a>
+        </li>
+        <li>
+          <a href="Photo_Gallery.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Photo gallery</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Testimonials</a>
+        </li>
+      </ul>
+  </div>
+  <!-- Droupdown2 -->
+  <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay1" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-orange focus:outline-none  font-medium rounded-lg text-xs px-5 py-5 text-center inline-flex items-center dark:text-orange-300 dark:hover:text-orange-500 " type="button">SERVICES<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+    </button>
+    
+    <!-- Dropdown menu -->
+    <div id="dropdownDelay1" class="z-10 hidden bg-black divide-y divide-black-100 rounded-lg shadow w-44">
+        <ul class="py-2 text-sm text-black-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-black-100 dark:hover:bg-gray-600 dark:hover:text-white">Corporate event management</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Wedding planner</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Beach wedding</a>
+          </li>
+        </ul>
+    </div>
+    
+              <a href="#" class="rounded-md px-3 py-5 text-xs font-medium text-black-300  hover:text-black-500">WEDDING VENUES</a>
+              <a href="#" class="rounded-md px-3 py-5 text-xs font-medium text-black-300  hover:text-black-500">LET'S TALK</a>
+            </div>
+          </div>
+        </div>
+       
+        </div>
+      </div>
+    </div>   
+  </nav>
+</div>
+<!-- starting of Photo_Gallery -->
+  <!-- background image -->
+  <div class="bg-fixed bg-no-repeat" style="background-image: url(https://images.moneycontrol.com/static-mcnews/2024/07/20240703065642_Colour-trends-in-Indian-wedding-.jpg?impolicy=website&width=1600&height=900); height: 600px; width: 100%;">
+</div>
+<div>
+  <h2 class="font-bold text-center p-2 text-2xl underline text-fuchsia-600">PHOTO GALLERY</h2>
+</div>
+<!-- row 1 -->
+  <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-1 md:p-2">
+    <img class="m-1 mx-2 " src="./pics/1.jpg" alt="" height="450px" width="400px">
+    <img class="m-1" src="./pics/2.jpg" alt="" height="450px" width="400px">
+    <img class="m-1 mx-2 " src="./pics/3.avif" alt="" height="450px" width="400px">
+    <img class="m-1" src="./pics/full-shot-couple-posing-wedding_23-2149956403.jpg" alt="" height="450px" width="400px">
+  </div>
+  <!-- row 2 -->
+  <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-1 md:p-2">
+    <img class="m-1 mx-2 " src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2020/11/Inside-image-Wedding-Photographers6.jpg" alt="" height="250px" width="400px">
+    <img class="m-1 " src="./pics/hands-indian-bride-groom-intertwined-together-making-authentic-wedding-ritual.jpg" alt="" height="250px" width="400px">
+    <img class="m-1 mx-2" src="https://cdn0.weddingwire.in/article/9179/3_2/1280/jpg/79719-wedding-events-gautam-khullar-lead-image.webp" alt="" height="450px" width="400px">
+    <img class="m-1 " src="https://crystallinestudio.com/blogmoreimg/13_crystalline.jpg" alt="" height="450px" width="350px">
+  </div>
+  <!-- row 3 -->
+  <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-1 md:p-2">
+    <img class="m-1 mx-2" src="https://iglowstudioz.com/wp-content/uploads/2024/02/Preserving-Traditions-A-Guide-to-Muslim-Wedding-Photography.jpg" alt="" height="450px" width="400px">
+    <img class="m-1 " src="https://image-tc.galaxy.tf/wijpeg-8o6fi7az0ib3oxivcguw9obx5/wedding-reception-vs-ceremony_standard.jpg?crop=307%2C0%2C1307%2C980" alt="" height="450px" width="400px">
+    <img class="m-1 mx-2" src="https://lirp.cdn-website.com/bd6f6ba9/dms3rep/multi/opt/0052-ladywood-estate-fusion-wedding3-1920w.jpg" alt="" height="450px" width="400px">
+    <img class="m-1 " src="https://images.squarespace-cdn.com/content/v1/5727974359827e5304ee8ddf/1521564925432-QGZGBDLV82P8O2SR5E50/Indian-wedding-photographers.jpg" alt="" height="450px" width="400px">
+  </div>
+  <!-- row 4 -->
+  <div>
+    <h2 class="font-bold text-center p-2 text-2xl underline text-fuchsia-600">FOOD SECTION</h2>
+  </div>
+  <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-1 md:p-2">
+    <img class="m-1 mx-2" src="https://www.hire4event.com/blogs/wp-content/uploads/2020/02/best-catering-service-for-corporate-events-750x500.jpg" alt="" height="450px" width="400px">
+    <img class="m-1 " src="https://content.jdmagicbox.com/comp/hooghly/a6/9999pxx33.xx33.210124120058.y2a6/catalogue/ds-caterers-and-event-management-bhadrakali-hooghly-caterers-pbim7qgzzh.jpg" alt="" height="450px" width="400px">
+    <img class="m-1 mx-2" src="https://cdn0.weddingwire.in/vendor/3648/3_2/960/jpg/18301005-117666448804126-574989444270544864-n_15_73648.jpeg" alt="" height="450px" width="400px">
+    <img class="m-1 " src="https://www.speedoring.com/images/product/797477535.jpg" alt="" height="450px" width="400px">
+  </div>
+  <!-- row 5 -->
+  <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-1 md:p-2">
+    <img class="m-1 mx-2" src="https://adc-us.com/wp-content/uploads/2021/07/catering-spread-1.jpg" alt="" height="450px" width="400px">
+    <img class="m-1 " src="https://www.flavaroevents.com/images/intro/flavaro_catering_and_event_management_palakkad_gallery_intro.jpg" alt="" height="450px" width="400px">
+    <img class="m-1 mx-2" src="https://img.freepik.com/free-photo/close-up-appetizing-ramadan-meal_23-2151182444.jpg" alt="" height="450px" width="400px">
+    <img class="m-1 " src="https://img.freepik.com/free-photo/side-view-people-celebrating-tamil-new-year_23-2151210764.jpg" alt="" height="450px" width="400px">
+  </div>
+
+<!-- row 6 -->
+<div>
+  <h2 class="font-bold text-center p-2 text-2xl underline text-fuchsia-600">DECORATIONS</h2>
+</div>
+<div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-1 md:p-2">
+  <img class="m-1 mx-2" src="https://5.imimg.com/data5/SH/TY/GLADMIN-58324105/event-management-for-weddings-500x500.jpg" alt="" height="450px" width="400px">
+  <img class="m-1 " src="https://cdn0.weddingwire.in/vendor/2848/3_2/960/jpg/decorators-malhotras-event-management-weddingdeco-9_15_442848-167999384090609.jpeg" alt="" height="450px" width="400px">
+  <img class="m-1 mx-2" src="https://cdn0.weddingwire.in/vendor/8286/3_2/960/jpg/wedding-planner-sv-event-management-company-stage-decor-6_15_368286-162264070515102.jpeg" alt="" height="450px" width="400px">
+  <img class="m-1 " src="https://alexandra.bridestory.com/image/upload/assets/image-4-J032lP1wR.png" alt="" height="450px" width="400px">
+</div>
+ <!-- row 7 -->
+ <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-1 md:p-2">
+  <img class="m-1 mx-2" src="https://www.weddingsutra.com/images/Vendor_Images/Wedding_Planners/b3-event/b3-event01.jpg" alt="" height="450px" width="400px">
+  <img class="m-1 " src="https://www.weddingsutra.com/images/Vendor_Images/Wedding_Planners/b3-event/b3-event02.jpg" alt="" height="450px" width="400px">
+  <img class="m-1 mx-2" src="https://pathanamthitta.weddingplannerskerala.com/wp-content/uploads/2018/09/19149392_1347524631983681_6315662288152808874_n.jpg" alt="" height="450px" width="400px">
+  <img class="m-1 " src="https://cabolinensthingsandmore.com/wp-content/uploads/2018/01/Event-Decorating-Companies-2.jpg" alt="" height="450px" width="400px">
+</div>
+  <!-- footer -->
+</body>
+</html>
