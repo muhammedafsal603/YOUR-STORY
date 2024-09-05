@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>about us</title>
+        <link rel="icon" type="image" href="./file.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+         <!-- navbar -->
+      <nav class=" navbar bg-white-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-16 w-22" src="./file.png" alt="Your Company">
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <div class="buttons">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="rounded-md px-3 py-5 text-xs font-medium text-orange-300">HOME</a>
+                  <!-- Dropdown -->
+                   
+    <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-orange  font-medium rounded-lg text-xs px-5 py-5 text-center inline-flex items-center dark:text-orange-300 dark:hover:text-orange-500 " type="button">ABOUT US<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+      </svg>
+      </button>
+      
+      <!-- Dropdown menu -->
+      <div id="dropdownDelay" class="z-10 hidden bg-black divide-y divide-black-100 rounded-lg shadow w-44">
+          <ul class="py-2 text-sm text-black-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+            <li>
+              <a href="about.html" class="block px-4 py-2 hover:bg-black-100 dark:hover:bg-gray-600 dark:hover:text-white">Stories of Us</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Photo gallery</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Testimonials</a>
+            </li>
+          </ul>
+      </div>
+      <!-- Droupdown2 -->
+      <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay1" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-orange focus:outline-none  font-medium rounded-lg text-xs px-5 py-5 text-center inline-flex items-center dark:text-orange-300 dark:hover:text-orange-500 " type="button">SERVICES<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg>
+        </button>
+        
+        <!-- Dropdown menu -->
+        <div id="dropdownDelay1" class="z-10 hidden bg-black divide-y divide-black-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-black-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-black-100 dark:hover:bg-gray-600 dark:hover:text-white">Corporate event management</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Wedding planner</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Beach wedding</a>
+              </li>
+            </ul>
+        </div>
+        
+                  <a href="#" class="rounded-md px-3 py-5 text-xs font-medium text-black-300  hover:text-black-500">WEDDING VENUES</a>
+                  <a href="#" class="rounded-md px-3 py-5 text-xs font-medium text-black-300  hover:text-black-500">LET'S TALK</a>
+                </div>
+              </div>
+            </div>
+           
+            </div>
+          </div>
+        </div>   
+      </nav>
+    </div>
+        <!-- background image -->
+        <div class="bg-fixed" style="background-image: url(https://lirp.cdn-website.com/28cd0bb4/dms3rep/multi/opt/traditional+american+wedding-1920w.jpeg); height: 690px; width: 100%;">
+        </div>
+        <!-- main div -->
+         <div id="main">
+          <img class="float-left" src="./pics/logo.jpg" alt="" height="390px" width="470px">
+         <div id="welcome">
+          <h4 class="p-4 font-bold text-2xl text-pink-700">Welcome to Your Story – Where Every Event Becomes Unforgettable</h4>
+          <p class="text-justify mr-16">
+            Welcome to Your Story, the ultimate tool for transforming your event planning experience. We understand that each event is a unique narrative, and our app is designed to help you bring that story to life effortlessly. With Your Story, you’ll find everything you need to plan and manage your events from one intuitive platform. Seamlessly handle scheduling, budgeting, and guest coordination, all while enjoying real-time collaboration with your team and vendors.
+    
+    Our customizable features adapt to any event type, ensuring that your vision is fully realized. Gain valuable insights with our analytics tools, and rest easy knowing our dedicated support team is available 24/7 to assist you.
+    
+    Download Your Story today and discover how we can help you craft events that leave lasting impressions. Welcome to a new era of event management where every detail contributes to a memorable story.
+    </p>
+         </div>
+         <div>
+          <p class="text-justify mr-16">In 2008, our venture was initiated in Kuriachira, Thrissur. At first, we handled event management tasks mostly in the limited regions close to Thrissur and its surrounds. What started as a small firm has now expanded into a multi-locality event management services in Kerala. Our hard work has enabled us to step out of the neighborhoods of Thrissur to popular territories of Calicut and Cochin. Today, Your story Events is strongly represented in Thrissur, Calicut, and Kochi – three most dynamic cities of Kerala.</p>
+         </div>
+         <div>
+          <img class="float-right" src="./pics/logo.jpg" alt="">
+          <h4 class="m-14 font-bold text-2xl text-pink-700">Journey – Created by Friends, Perfected for Your Events</h4>
+          <p class="text-justify ml-14">Welcome to Your Story, where event management meets innovation and personal touch. This platform was born from a shared vision among a group of friends who embarked on a journey to revolutionize event planning. What began as a collaborative project has evolved into a powerful tool designed to make organizing events seamless and enjoyable.
+    
+            Your Story combines simplicity with sophistication, offering an intuitive interface that integrates scheduling, budgeting, and guest management into one cohesive experience. Our platform is crafted to handle every detail of your event, allowing you to focus on what truly matters: creating memorable experiences.
+            
+            The essence of Your Story lies in its ability to adapt to various event types and sizes, making it a versatile solution whether you’re planning a grand conference, a joyful wedding, or a community gathering. With real-time collaboration features, insightful analytics, and round-the-clock support, we are here to ensure your event is executed flawlessly.
+            
+            Join us on this exciting journey. Download Your Story today and let us help you turn your event vision into an extraordinary reality. Welcome to a new era of event management, where every detail contributes to a beautiful story.</p>
+            <h3 class="m-14 font-bold text-2xl text-pink-700">Mission And Vision</h3>
+            <p class="text-justify m-14">At Your Story, our mission is to deliver exceptional event management solutions that are both unforgettable and budget-friendly. We are dedicated to simplifying the event planning process through an intuitive platform that integrates scheduling, budgeting, and guest management seamlessly. Our goal is to provide high-quality services that enable our customers to create memorable events without exceeding their financial constraints. We believe that remarkable events should be accessible to everyone, and we strive to offer solutions that combine affordability with excellence.
+    
+              Our vision is to become the leading platform in the event management industry, setting a new standard for creativity, efficiency, and value. We aim to empower our users to transform their event ideas into extraordinary experiences, ensuring every detail contributes to a captivating story. At Your Story, we’re committed to making every event a celebration of innovation and personal touch, leaving a lasting impression long after the occasion.</p>
+         </div>
+         <div>
+          <h3 class=" font-bold text-2xl text-pink-700 m-14">A Recall of Achievements</h3>
+          <p class="text-justify m-14">Since our inception, Your Story has proudly transformed the event planning landscape with numerous achievements. We have successfully managed a wide range of events, from intimate gatherings to grand celebrations, consistently delivering exceptional experiences. Our commitment to providing budget-friendly and memorable solutions has earned us the trust of many satisfied clients.
+    
+            In addition to our event successes, we’ve expanded our reach with branches now established in various locations. This growth reflects our dedication to making our innovative event management platform accessible to a broader audience. Each new branch brings us closer to our goal of serving diverse communities and catering to the unique needs of different regions.
+            
+            These milestones highlight our journey and commitment to excellence in event management. At Your Story, we’re excited to continue this growth, bringing our expertise and personalized service to even more clients and locations, ensuring every event is a remarkable success.</p>
+        </div>
+        <!-- footer -->
+    
+    </body>
+    </html>
+</body>
+</html>
