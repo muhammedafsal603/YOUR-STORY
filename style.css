@@ -16,7 +16,7 @@
     z-index: 100;
     position: absolute;
     left: 10%;
-    top: 40%;
+    top: 15%;
     color: azure;
     opacity: 0;
     transform: translateY(30px);
@@ -36,6 +36,8 @@
     width: 80px;
     height: 40px;
     margin-top: 20px;
+    border-radius: 10px;
+    transition: .2s;
 }.caro_but:hover{
     background-color: aliceblue;
     color: orange;
@@ -46,4 +48,88 @@
     font-family: serif;
 }.buttons{
     margin-left: 500px;
-}
+    margin-top: 0px;
+}/* From Uiverse.io by elijahgummer */ 
+.login {
+    font: inherit;
+    background-color: orange;
+    border: 0;
+    color: #fff;
+    border-radius: 0.5em;
+    font-size: 1.rem;
+    padding: 0.375em ;
+    font-weight: 600;
+    text-shadow: 0 0.0625em 0 #fff;
+    box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+      0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+      0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 99%;
+    top: 10px;
+  }
+  .login:active {
+    translate: 0 0.225em;
+    box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+      0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+      0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+  }.row{
+    padding: 100px;
+    display:flex;
+    justify-content: space-around;
+  }.row h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+  }.row p{
+    color: grey;
+    font-size: medium;
+  }.row iframe{
+    width: 400px;
+    height: 350px;
+    padding: 30px;
+    margin-right: 100px;
+  }.col-1{
+    margin-left: 100px;
+    padding: 50px;
+  }.row1{
+    width: 100%;
+    height: 500px;
+    background-color: beige;
+    padding: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    
+  }.col1-1{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    padding: 15px;
+  }.img1{
+    position: absolute;
+    top: 13%;
+    left: 15%;
+  }.img2{
+    position: absolute;
+    top: 13%;
+    left: 34%;
+  }.img3{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+  }.img4{
+    position: absolute;
+    top: 55%;
+    left: 35%;
+  }.col1-2{
+    width: 50%;
+    height: 500px;
+    padding: 20px;
+    margin-left: 200px;
+  }
+  .col1-2 h1{
+    font-family: "Roboto", sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+  }
